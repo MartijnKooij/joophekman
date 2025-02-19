@@ -1,0 +1,156 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font: 11pt 'Lexend Deca', Arial, sans-serif;
+    letter-spacing: 0.8px;
+    background-color: white;
+    color: rgb(43, 43, 43)
+}
+
+h1 {
+    font-size: 16pt;
+    letter-spacing: 1.2px;
+}
+
+ul,
+li {
+    margin: 0px;
+    display: block;
+    background-color: rgb(248, 190, 158);
+    cursor: default
+}
+
+ul {
+    width: 180px;
+    border: solid 1px rgb(84, 84, 84);
+    padding: 0px
+}
+
+#mainmenu {
+    width: 200px
+}
+
+body[text=""] #mainmenu {
+    width: 180px
+}
+
+li ul {
+    display: none;
+    position: absolute;
+    margin-left: 175px;
+    margin-top: -25px
+}
+
+li a {
+    padding: 1px;
+    text-decoration: none;
+    background-color: rgb(248, 190, 158);
+    width: 100%;
+    display: block
+}
+
+li a:hover,
+a.menuactive {
+    background-color: rgb(127, 115, 89);
+    font-weight: bold;
+    border: solid 1px #909090;
+    border-right: none;
+    border-left: none;
+}
+
+li {
+    float: left;
+    width: 100%;
+    height: 20px;
+}
+
+body[text=""] li {
+    width: 99%
+}
+
+a {
+    color: black;
+    text-decoration: none
+}
+
+a.menuparent,
+a.menuactive {
+    background-image: url(/images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: 160px 4px
+}
+
+#header {
+    margin: 20px 0px 10px 0px;
+    padding: 17px 0px 0px 35px;
+    height: 33px;
+    border-style: solid;
+    border-color: #909090;
+    border-width: 1px 0px;
+    line-height: 20px;
+    background-color: rgb(248, 190, 158);
+    height: 20px;
+    font-size: 11pt;
+}
+
+#content {
+    margin: 0px 5% 50px 250px;
+    padding: 10px;
+}
+
+#content_intro {
+    padding: 0px 3px 20px 3px
+}
+
+#mainmenu {
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    background-color: rgb(248, 190, 158);
+    border: 1px solid #909090;
+    margin: 10px;
+    margin-left: 5px;
+    float: left;
+    height: 60%;
+    padding-top: 25px;
+    padding-left: 5px
+}
+
+#footer {
+    position: fixed;
+    top: 94%;
+    left: 37px;
+    color: #B8B8B8
+}
+
+#footer a {
+    color: #CCCCCC;
+    text-decoration: underline
+}
+
+#footer p {
+    width: 100%;
+}
+
+p#creator {
+    font-size: 8pt
+}
+
+p {
+    width: 98%;
+    margin-bottom: 2em;
+}
+
+#content img {
+    padding: 2px;
+    border: 1px solid #555555;
+    cursor: default
+}
+
+#content img.small {
+    max-width: 100px;
+    max-height: 100px;
+    width: expression(this.offsetWidth > 100? "100px": "auto");
+    cursor: pointer;
+    margin: 10 10 10 10
+}
