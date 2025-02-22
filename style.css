@@ -13,6 +13,10 @@
 
     --clr-footer: hsl(329, 50%, 96%);
     --clr-intro: rgb(248, 190, 158);
+    --clr-bronze: rgb(205, 127, 50);
+    --clr-stone: rgb(176, 196, 222);
+    --clr-pottery: rgb(222, 184, 135);
+    --clr-portraits: rgb(255, 228, 196);
 
     --clr-white: #FFFFFF;
     --clr-black: #2b2b2b;
@@ -123,7 +127,22 @@ footer {
 }
 
 .bronze {
-    background-color: var(--clr-intro);
+    background-color: var(--clr-bronze);
+    padding: .5rem;
+}
+
+.portraits {
+    background-color: var(--clr-portraits);
+    padding: .5rem;
+}
+
+.pottery {
+    background-color: var(--clr-pottery);
+    padding: .5rem;
+}
+
+.stone {
+    background-color: var(--clr-stone);
     padding: .5rem;
 }
 
