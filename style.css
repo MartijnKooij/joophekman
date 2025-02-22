@@ -134,6 +134,12 @@ footer {
     grid-auto-rows: 0;
 }
 
+@media (width < 40em) {
+    .masonry {
+        grid-template-columns: 1fr;
+    }
+}
+
 .masonry-content {
     display: flex;
     flex-direction: column;
