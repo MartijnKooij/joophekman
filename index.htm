@@ -1,88 +1,389 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
-	<head>
-		<title>Joop Hekman</title>
-		<meta content="Joop Hekman, joop, hekman, beeld, beelden, kunst, beeldhouwer, brons, steen, gieten, penningen, munten, werken, utrecht" name="keywords">
-		<meta name="description" content="Het werk van Joop Hekman">
-		<meta name="publisher" content="martijnkooij.nl">
-		<meta name="copyright" content="&copy; 2005-2025 Martijn Kooij">
-		<meta http-equiv=content-type content="text/html; charset=UTF-8">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-		<link href="style.css" type="text/css" rel="stylesheet">
-		<script type="text/javascript" src="js/data.js" language="javascript"></script>
-		<script type="text/javascript" src="js/main.js" language="javascript"></script>
-	</head>
-	<body onload="LoadPage();" text="">
-		<div id="header">Welkom op de website van Joop Hekman</div>
-
-		<div id="content">
-			<h1 id="content_header"></h1>
-			<p id="content_intro"></p>
-			<div id="content_content"></div>
-		</div>
-		<div id="menu">
-			<ul id="mainmenu">
-				<li><a href="?id=home,0">Start</a></li>
-				<li><a>Brons</a>
-					<ul>
-						<li><a href="?id=bronze,Barneveld">Barneveld</a></li>
-						<li><a href="?id=bronze,Breda">Breda</a></li>
-						<li><a href="?id=bronze,Bussum">Bussum</a></li>
-						<li><a href="?id=bronze,Doorn">Doorn</a></li>
-						<li><a href="?id=bronze,Enschede">Enschede</a></li>
-						<li><a href="?id=bronze,Harmelen">Harmelen</a></li>
-						<li><a href="?id=bronze,Houten">Houten</a></li>
-						<li><a href="?id=bronze,Leeuwarden">Leeuwarden</a></li>
-						<li><a href="?id=bronze,Utrecht">Utrecht</a></li>
-						<li><a href="?id=bronze,Wijk bij Duurstede">Wijk bij Duurstede</a></li>
-						<li><a href="?id=bronze,Zeist">Zeist</a></li>
-					</ul>
-				</li>
-				<li><a>Keramiek</a>
-					<ul>
-						<li><a href="?id=pottery,Barendrecht">Barendrecht</a></li>
-						<li><a href="?id=pottery,Deventer">Deventer</a></li>
-						<li><a href="?id=pottery,Utrecht">Utrecht</a></li>
-						<li><a href="?id=pottery,Zeist">Zeist</a></li>
-						<li><a href="?id=pottery,Zwolle">Zwolle</a></li>
-					</ul>
-				</li>
-				<li><a>Portretten</a>
-					<ul>
-						<li><a href="?id=portretten,Amersfoort">Amersfoort</a></li>
-						<li><a href="?id=portretten,Prive bezit">Prive bezit</a></li>
-						<li><a href="?id=portretten,Utrecht">Utrecht</a></li>
-					</ul>
-				</li>
-				<li><a>Steen</a>
-					<ul>
-						<li><a href="?id=stone,Bilthoven">Bilthoven</a></li>
-						<li><a href="?id=stone,Eindhoven">Eindhoven</a></li>
-						<li><a href="?id=stone,Hilversum">Hilversum</a></li>
-						<li><a href="?id=stone,Prive bezit">Prive bezit</a></li>
-						<li><a href="?id=stone,Utrecht">Utrecht</a></li>
-					</ul>
-				</li>
-				<li><a>Baksteen</a>
-				</li>
-				<li><a>Plaquettes</a>
-				</li>
-				<li><a>Penningen &amp; Munten</a>
-				</li>
-				<li><a>Reliefs</a>
-				</li>
-				<li><a>Vrijwerk</a>
-				</li>
-				<li><a href="?id=contact,0">Contact</a></li>
-			</ul>
-		</div>
-		<div id="footer">
-			<p id="creator">Gemaakt door: <a href="http://www.martijnkooij.nl" target="_blank">Martijn Kooij</a></p>
-		</div>
-	</body>
+    <head>
+        <title>Joop Hekman</title>
+        <meta content="Joop Hekman, joop, hekman, beeld, beelden, kunst, beeldhouwer, brons, steen, gieten, penningen, munten, werken, utrecht" name="keywords">
+        <meta name="description" content="Het werk van Joop Hekman">
+        <meta name="publisher" content="martijnkooij.nl">
+        <meta name="copyright" content="&copy; 2005-2025 Martijn Kooij">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <section class="intro">
+                <h1>Welkom op de website van Joop Hekman</h1>
+                <h2>Op deze website vindt u alle werken van Joop Hekman</h2>
+                <p>
+                    <img style="width: 100%; height: auto;" src="pictures/joop/joop1.jpg">
+                    <br>
+                    Op veertienjarige leeftijd begon hij op de avondschool de lessen te volgen van zijn oom, de beeldhouwer Willem van Kuilenburg, en kreeg hij er tekenles van de bekende graficus Willem van Leusden. De medailleur Wienecke ontdekte zijn talent, leerde hem het vervaardigen van munten en penningen en stuurde hem naar de Academie Kunstoefening te Arnhem (1938-1942), waar Gijs Jacobs van den Hoff de opleiding van Hekman in handen nam. Joop Hekman beschouwt Wienecke en Van den Hof als zijn belangrijkste leermeesters.
+                </p>
+                <p>
+                    <img style="width: 100%; height: auto;" src="pictures/joop/joop2.jpg">
+                    <br>
+                    Het werk van Joop Hekman is veelomvattend. Naast beelden, beeldgroepen en beeldreliëfs in brons of steen, gebakken klei of hout, zijn er reliëfs en mozaïeken in keramiek en baksteen. Kenmerkend is, dat hij zijn monumentale beelden in een speciale architectonische context plaatst, die hij veelal zelf ontwerpt. Daarbij speelt hij met verschillen in materiaal, textuur en vorm.
+                </p>
+                <p>
+                    <img style="width: 100%; height: auto;" src="pictures/joop/joop3.jpg">
+                    <br>
+                    Hekman heeft tal van penningen en munten ontworpen, waarvan de eerste uit 1937 dateren. Last but not least is hij een expert in het vervaardigen van watermerken ten behoeve van bankbiljetten.
+                </p>
+            </section>
+            <section class="bronze">
+                <h3>Brons</h3>
+                <div class="masonry">
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B01.jpg" alt="Utrecht, 1959, Fontein, De Muze, Lucasbolwerk">
+                            <h4 class="masonry-title">Utrecht</h4>
+                            <p class="masonry-description">1959, Fontein, "De Muze", Lucasbolwerk</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B01a.jpg" alt="Utrecht, 1959, Fontein, De Muze, Lucasbolwerk">
+                            <h4 class="masonry-title">Utrecht</h4>
+                            <p class="masonry-description">1959, Fontein, "De Muze", Lucasbolwerk</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B01b.jpg" alt="Utrecht, 1959, Fontein, De Muze, Lucasbolwerk">
+                            <h4 class="masonry-title">Utrecht</h4>
+                            <p class="masonry-description">1959, Fontein, De Muze, Lucasbolwerk</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B02.jpg" alt="Doorn, Haan">
+                            <h4 class="masonry-title">Doorn</h4>
+                            <p class="masonry-description">Haan</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B03.jpg" alt="Utrecht, 1960, Speelbeer, Peltschool">
+                            <h4 class="masonry-title">Utrecht</h4>
+                            <p class="masonry-description">1960, Speelbeer, Peltschool</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B04.jpg" alt="Harmelen, 1964, Speelhaan, Scholengemeenschap">
+                            <h4 class="masonry-title">Harmelen</h4>
+                            <p class="masonry-description">1964, Speelhaan, Scholengemeenschap</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B04a.jpg" alt="Harmelen, 1964, Speelhaan, Scholengemeenschap">
+                            <h4 class="masonry-title">Harmelen</h4>
+                            <p class="masonry-description">1964, Speelhaan, Scholengemeenschap</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B04b.jpg" alt="Harmelen, 1964, Speelhaan, Scholengemeenschap">
+                            <h4 class="masonry-title">Harmelen</h4>
+                            <p class="masonry-description">1964, Speelhaan, Scholengemeenschap</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B05.jpg" alt="Leeuwarden, 1963, Muzeum Prisessenhof">
+                            <h4 class="masonry-title">Leeuwarden</h4>
+                            <p class="masonry-description">1963, Muzeum Prisessenhof</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B06.jpg" alt="Bussum, 1963, Willem de Zwijger Lyceum">
+                            <h4 class="masonry-title">Bussum</h4>
+                            <p class="masonry-description">1963, Willem de Zwijger Lyceum</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B06a.jpg" alt="Bussum, 1963, Willem de Zwijger Lyceum">
+                            <h4 class="masonry-title">Bussum</h4>
+                            <p class="masonry-description">1963, Willem de Zwijger Lyceum</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B07.jpg" alt="Utrecht, 1967, Beeldengroep van lood UMC">
+                            <h4 class="masonry-title">Utrecht</h4>
+                            <p class="masonry-description">1967, Beeldengroep van lood UMC</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B07a.jpg" alt="Utrecht, 1976, Beeldengroep van lood UMC">
+                            <h4 class="masonry-title">Utrecht</h4>
+                            <p class="masonry-description">1976, Beeldengroep van lood UMC</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B08.jpg" alt="Breda, 1968, Fontein Zeemeermin">
+                            <h4 class="masonry-title">Breda</h4>
+                            <p class="masonry-description">1968, Fontein Zeemeermin</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B08a.jpg" alt="Breda, 1968, Fontein Zeemeermin">
+                            <h4 class="masonry-title">Breda</h4>
+                            <p class="masonry-description">1968, Fontein Zeemeermin</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B09.jpg" alt="Houten, 1969, Zeemeermin, Scholengemeenschap De Heemlanden">
+                            <h4 class="masonry-title">Houten</h4>
+                            <p class="masonry-description">1969, Zeemeermin, Scholengemeenschap De Heemlanden</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B10.jpg" alt="Utrecht, 1970, Spaanse vrouw in lood, Universiteit Domplein">
+                            <h4 class="masonry-title">Utrecht</h4>
+                            <p class="masonry-description">1970, Spaanse vrouw in lood, Universiteit Domplein</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B11.jpg" alt="Wijk bij Duurstede, 1976, Oma met Kind, Bejaarden centrum">
+                            <h4 class="masonry-title">Wijk bij Duurstede</h4>
+                            <p class="masonry-description">1976, Oma met Kind, Bejaarden centrum</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B11a.jpg" alt="Wijk bij Duurstede, 1976, Oma met Kind, Bejaarden centrum">
+                            <h4 class="masonry-title">Wijk bij Duurstede</h4>
+                            <p class="masonry-description">1976, Oma met Kind, Bejaarden centrum</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B11b.jpg" alt="Wijk bij Duurstede, 1976, Oma met Kind, Bejaarden centrum">
+                            <h4 class="masonry-title">Wijk bij Duurstede</h4>
+                            <p class="masonry-description">1976, Oma met Kind, Bejaarden centrum</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B12.jpg" alt="Zeist, 1976, Fontein met klinkers, Blinden instituut Bartimeus">
+                            <h4 class="masonry-title">Zeist</h4>
+                            <p class="masonry-description">1976, Fontein met klinkers, Blinden instituut Bartimeus</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B12a.jpg" alt="Zeist, 1976, Fontein met klinkers, Blinden instituut Bartimeus">
+                            <h4 class="masonry-title">Zeist</h4>
+                            <p class="masonry-description">1976, Fontein met klinkers, Blinden instituut Bartimeus</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B12b.jpg" alt="Zeist, 1976, Fontein met klinkers, Blinden instituut Bartimeus">
+                            <h4 class="masonry-title">Zeist</h4>
+                            <p class="masonry-description">1976, Fontein met klinkers, Blinden instituut Bartimeus</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B12c.jpg" alt="Zeist, 1976, Fontein met klinkers, Blinden instituut Bartimeus">
+                            <h4 class="masonry-title">Zeist</h4>
+                            <p class="masonry-description">1976, Fontein met klinkers, Blinden instituut Bartimeus</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B13.jpg" alt="Barneveld, 1979, Beeldengroep, Herder met schapen en lammtjes">
+                            <h4 class="masonry-title">Barneveld</h4>
+                            <p class="masonry-description">1979, Beeldengroep, Herder met schapen en lammtjes</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B13a.jpg" alt="Barneveld, 1979, Beeldengroep, Herder met schapen en lammtjes">
+                            <h4 class="masonry-title">Barneveld</h4>
+                            <p class="masonry-description">1979, Beeldengroep, Herder met schapen en lammtjes</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B14.jpg" alt="Utrecht, 1983, Patio fontein en beeld, Centrum geb De Uithof">
+                            <h4 class="masonry-title">Utrecht</h4>
+                            <p class="masonry-description">1983, Patio fontein en beeld, Centrum geb De Uithof</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B14a.jpg" alt="Utrecht, 1983, Patio fontein en beeld, Centrum geb De Uithof">
+                            <h4 class="masonry-title">Utrecht</h4>
+                            <p class="masonry-description">1983, Patio fontein en beeld, Centrum geb De Uithof</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B14b.jpg" alt="Utrecht, 1983, Patio fontein en beeld, Centrum geb De Uithof">
+                            <h4 class="masonry-title">Utrecht</h4>
+                            <p class="masonry-description">1983, Patio fontein en beeld, Centrum geb De Uithof</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B15.jpg" alt="Utrecht, 1984, Beeldengroep, Trans 10 Universiteit">
+                            <h4 class="masonry-title">Utrecht</h4>
+                            <p class="masonry-description">1984, Beeldengroep, Trans 10 Universiteit</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B16.jpg" alt="Enschede, 1985, Klinkerplastiek en beelden, Stadhuisplein">
+                            <h4 class="masonry-title">Enschede</h4>
+                            <p class="masonry-description">1985, Klinkerplastiek en beelden, Stadhuisplein</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B16a.jpg" alt="Enschede, 1985, Klinkerplastiek en beelden, Stadhuisplein">
+                            <h4 class="masonry-title">Enschede</h4>
+                            <p class="masonry-description">1985, Klinkerplastiek en beelden, Stadhuisplein</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B16b.jpg" alt="Enschede, 1985, Klinkerplastiek en beelden, Stadhuisplein">
+                            <h4 class="masonry-title">Enschede</h4>
+                            <p class="masonry-description">1985, Klinkerplastiek en beelden, Stadhuisplein</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B16c.jpg" alt="Enschede, 1985, Klinkerplastiek en beelden, Stadhuisplein">
+                            <h4 class="masonry-title">Enschede</h4>
+                            <p class="masonry-description">1985, Klinkerplastiek en beelden, Stadhuisplein</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B17.jpg" alt="Utrecht, 1970, Zittende vrouw, Julianapark">
+                            <h4 class="masonry-title">Utrecht</h4>
+                            <p class="masonry-description">1970, Zittende vrouw, Julianapark</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B17a.jpg" alt="Utrecht, 1970, Zittende vrouw, Julianapark">
+                            <h4 class="masonry-title">Utrecht</h4>
+                            <p class="masonry-description">1970, Zittende vrouw, Julianapark</p>
+                        </div>
+                    </div>
+                    <div class="masonry-brick">
+                        <div class="masonry-content">
+                            <img decoding="async" src="pictures/bronze/B17b.jpg" alt="Utrecht, 1970, Zittende vrouw, Julianapark">
+                            <h4 class="masonry-title">Utrecht</h4>
+                            <p class="masonry-description">1970, Zittende vrouw, Julianapark</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <span>
+                Gemaakt door:
+                <a href="http://www.martijnkooij.nl" target="_blank">Martijn Kooij</a>
+            </span>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js"></script>
+        <script>
+            /**
+             * Set appropriate spanning to any masonry item
+             *
+             * Get different properties we already set for the masonry, calculate 
+             * height or spanning for any cell of the masonry grid based on its 
+             * content-wrapper's height, the (row) gap of the grid, and the size 
+             * of the implicit row tracks.
+             *
+             * @param item Object A brick/tile/cell inside the masonry
+             */
+            function resizeMasonryItem(item){
+              /* Get the grid object, its row-gap, and the size of its implicit rows */
+              var grid = document.getElementsByClassName('masonry')[0],
+                  rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap')),
+                  rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
+            
+              /*
+               * Spanning for any brick = S
+               * Grid's row-gap = G
+               * Size of grid's implicitly create row-track = R
+               * Height of item content = H
+               * Net height of the item = H1 = H + G
+               * Net height of the implicit row-track = T = G + R
+               * S = H1 / T
+               */
+              var rowSpan = Math.ceil((item.querySelector('.masonry-content').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
+            
+              /* Set the spanning as calculated above (S) */
+              item.style.gridRowEnd = 'span '+rowSpan;
+            }
+            
+            /**
+             * Apply spanning to all the masonry items
+             *
+             * Loop through all the items and apply the spanning to them using 
+             * `resizeMasonryItem()` function.
+             *
+             * @uses resizeMasonryItem
+             */
+            function resizeAllMasonryItems(){
+              // Get all item class objects in one list
+              var allItems = document.getElementsByClassName('masonry-brick');
+            
+              /*
+               * Loop through the above list and execute the spanning function to
+               * each list-item (i.e. each masonry item)
+               */
+              for(var i=0;i>allItems.length;i++){
+                resizeMasonryItem(allItems[i]);
+              }
+            }
+            
+            /**
+             * Resize the items when all the images inside the masonry grid 
+             * finish loading. This will ensure that all the content inside our
+             * masonry items is visible.
+             *
+             * @uses ImagesLoaded
+             * @uses resizeMasonryItem
+             */
+            function waitForImages() {
+              var allItems = document.getElementsByClassName('masonry-brick');
+              for(var i=0;i<allItems.length;i++){
+                imagesLoaded( allItems[i], function(instance) {
+                  var item = instance.elements[0];
+                  resizeMasonryItem(item);
+                } );
+              }
+            }
+            
+            /* Resize all the grid items on the load and resize events */
+            var masonryEvents = ['load', 'resize'];
+            masonryEvents.forEach( function(event) {
+              window.addEventListener(event, resizeAllMasonryItems);
+            } );
+            
+            /* Do a resize once more when all the images finish loading */
+            waitForImages();
+        </script>
+    </body>
 </html>
-
-
-

@@ -140,15 +140,15 @@ function LoadHome(oHeader, oIntro, oContent) {
 	var oParagraph;
 
 	oParagraph = document.createElement('p');
-	oParagraph.innerHTML = "<img style='width: 100%; height: auto;' src='pictures/joop/joop1.jpg'><br/>Op veertienjarige leeftijd begon hij op de avondschool de lessen te volgen van zijn oom, de beeldhouwer Willem van Kuilenburg, en kreeg hij er tekenles van de bekende graficus Willem van Leusden. De medailleur Wienecke ontdekte zijn talent, leerde hem het vervaardigen van munten en penningen en stuurde hem naar de Academie Kunstoefening te Arnhem (1938-1942), waar Gijs Jacobs van den Hoff de opleiding van Hekman in handen nam. Joop Hekman beschouwt Wienecke en Van den Hof als zijn belangrijkste leermeesters.";
+	oParagraph.innerHTML = "";
 	oContent.appendChild(oParagraph);
 
 	oParagraph = document.createElement('p');
-	oParagraph.innerHTML = "<img style='width: 100%; height: auto;' src='pictures/joop/joop2.jpg'><br/>Het werk van Joop Hekman is veelomvattend. Naast beelden, beeldgroepen en beeldreliëfs in brons of steen, gebakken klei of hout, zijn er reliëfs en mozaïeken in keramiek en baksteen. Kenmerkend is, dat hij zijn monumentale beelden in een speciale architectonische context plaatst, die hij veelal zelf ontwerpt. Daarbij speelt hij met verschillen in materiaal, textuur en vorm.";
+	oParagraph.innerHTML = "";
 	oContent.appendChild(oParagraph);
 
 	oParagraph = document.createElement('p');
-	oParagraph.innerHTML = "<img style='width: 100%; height: auto;' src='pictures/joop/joop3.jpg'><br/>Hekman heeft tal van penningen en munten ontworpen, waarvan de eerste uit 1937 dateren. Last but not least is hij een expert in het vervaardigen van watermerken ten behoeve van bankbiljetten.";
+	oParagraph.innerHTML = "";
 	oContent.appendChild(oParagraph);
 }
 

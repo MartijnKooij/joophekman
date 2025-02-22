@@ -1,156 +1,175 @@
+:root {
+    --fs-sm: clamp(0.8rem, 0.17vi + 0.76rem, 0.89rem);
+    --fs-base: clamp(1rem, 0.34vi + 0.91rem, 1.19rem);
+    --fs-md: clamp(1.25rem, 0.61vi + 1.1rem, 1.58rem);
+    --fs-lg: clamp(1.56rem, 1vi + 1.31rem, 2.11rem);
+    --fs-xl: clamp(1.95rem, 1.56vi + 1.56rem, 2.81rem);
+    --fs-xxl: clamp(2.44rem, 2.38vi + 1.85rem, 3.75rem);
+    --fs-xxxl: clamp(3.05rem, 3.54vi + 2.17rem, 5rem);
+
+    --fw-thin: 200;
+    --fw-bold: 700;
+    --fw-extra-bold: 900;
+
+    --clr-footer: hsl(329, 50%, 96%);
+    --clr-intro: rgb(248, 190, 158);
+
+    --clr-white: #FFFFFF;
+    --clr-black: #2b2b2b;
+
+    --clr-gray-100: #F3F3F3;
+    --clr-gray-200: #E0E0E0;
+    --clr-gray-300: #D9D9D9;
+    --clr-gray-600: #5F5F5F;
+}
+
+/* --- RESET --- */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    /* Get rid of all font sizes and heights */
+}
+
 body {
-    margin: 0px;
-    padding: 0px;
-    font: 11pt 'Lexend Deca', Arial, sans-serif;
-    letter-spacing: 0.8px;
-    background-color: white;
-    color: rgb(43, 43, 43)
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+    line-height: 1.1;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :has(:target) {
+        scroll-behavior: smooth;
+        scroll-padding-top: 6rem;
+    }
+}
+
+
+/* GENERAL  */
+
+body {
+    font-family: "Lexend Deca", system-ui, sans-serif;
+    font-size: var(--fs-base);
+    color: var(--clr-black);
+    font-display: optional;
 }
 
 h1 {
-    font-size: 16pt;
-    letter-spacing: 1.2px;
+    font-size: var(--fs-md);
+    font-weight: var(--fw-bold);
+    padding: 0 0 1rem 0;
+    text-align: center;
 }
 
-ul,
-li {
-    margin: 0px;
-    display: block;
-    background-color: rgb(248, 190, 158);
-    cursor: default
+h2 {
+    padding-bottom: 1rem;
+    text-align: center;
 }
 
-ul {
-    width: 180px;
-    border: solid 1px rgb(84, 84, 84);
-    padding: 0px
+h3 {
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-bold);
 }
 
-#mainmenu {
-    width: 200px
+strong {
+    font-weight: var(--fw-bold);
 }
 
-body[text=""] #mainmenu {
-    width: 180px
+footer {
+    padding: 2rem;
+    background-color: var(--clr-footer);
+    text-align: center;
 }
 
-li ul {
-    display: none;
-    position: absolute;
-    margin-left: 175px;
-    margin-top: -25px
+
+/* UTILITIES */
+
+.wrapper {
+    --max-width: 60rem;
+    --padding: 1rem;
+
+    width: min(var(--max-width), 100% - var(--padding) * 2);
+    margin-inline: auto;
 }
 
-li a {
-    padding: 1px;
-    text-decoration: none;
-    background-color: rgb(248, 190, 158);
+@media (width > 40em) {
+    .wrapper {
+        --padding: 2rem;
+    }
+}
+
+/* STYLES */
+.intro {
+    background-color: var(--clr-intro);
+    padding: 5rem;
+}
+
+.bronze {
+    background-color: var(--clr-intro);
+    padding: .5rem;
+}
+
+.masonry {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 0;
+}
+
+.masonry-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.masonry-content img {
     width: 100%;
-    display: block
+    height: auto;
+    object-fit: cover;
+    object-position: center;
 }
 
-li a:hover,
-a.menuactive {
-    background-color: rgb(127, 115, 89);
-    font-weight: bold;
-    border: solid 1px #909090;
-    border-right: none;
-    border-left: none;
+.masonry-brick {
+    background-color: var(--clr-gray-100);
+    transition: opacity .25s ease-in-out;
 }
 
-li {
-    float: left;
-    width: 100%;
-    height: 20px;
+.masonry-brick:hover {
+    opacity: .75;
 }
 
-body[text=""] li {
-    width: 99%
+.masonry-title,
+.masonry-description {
+    margin: 0;
+    text-align: center;
 }
 
-a {
-    color: black;
-    text-decoration: none
+.masonry-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 1rem .5rem;
 }
 
-a.menuparent,
-a.menuactive {
-    background-image: url(/images/arrow.png);
-    background-repeat: no-repeat;
-    background-position: 160px 4px
-}
-
-#header {
-    margin: 20px 0px 10px 0px;
-    padding: 17px 0px 0px 35px;
-    height: 33px;
-    border-style: solid;
-    border-color: #909090;
-    border-width: 1px 0px;
-    line-height: 20px;
-    background-color: rgb(248, 190, 158);
-    height: 20px;
-    font-size: 11pt;
-}
-
-#content {
-    margin: 0px 5% 50px 250px;
-    padding: 10px;
-}
-
-#content_intro {
-    padding: 0px 3px 20px 3px
-}
-
-#mainmenu {
-    position: absolute;
-    top: 70px;
-    left: 30px;
-    background-color: rgb(248, 190, 158);
-    border: 1px solid #909090;
-    margin: 10px;
-    margin-left: 5px;
-    float: left;
-    height: 60%;
-    padding-top: 25px;
-    padding-left: 5px
-}
-
-#footer {
-    position: fixed;
-    top: 94%;
-    left: 37px;
-    color: #B8B8B8
-}
-
-#footer a {
-    color: #CCCCCC;
-    text-decoration: underline
-}
-
-#footer p {
-    width: 100%;
-}
-
-p#creator {
-    font-size: 8pt
-}
-
-p {
-    width: 98%;
-    margin-bottom: 2em;
-}
-
-#content img {
-    padding: 2px;
-    border: 1px solid #555555;
-    cursor: default
-}
-
-#content img.small {
-    max-width: 100px;
-    max-height: 100px;
-    width: expression(this.offsetWidth > 100? "100px": "auto");
-    cursor: pointer;
-    margin: 10 10 10 10
+.masonry-description {
+    padding: .5rem;
+    font-size: .75rem;
 }
