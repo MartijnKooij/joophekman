@@ -17,6 +17,7 @@
     --clr-stone: rgb(176, 196, 222);
     --clr-pottery: rgb(222, 184, 135);
     --clr-portraits: rgb(255, 228, 196);
+    --clr-wood: rgb(222, 184, 135);
 
     --clr-white: #FFFFFF;
     --clr-black: #2b2b2b;
@@ -143,6 +144,11 @@ footer {
 
 .stone {
     background-color: var(--clr-stone);
+    padding: .5rem;
+}
+
+.wood {
+    background-color: var(--clr-wood);
     padding: .5rem;
 }
 
